@@ -1,0 +1,3 @@
+antecedents,consequents,antecedent support,consequent support,support,confidence,lift,leverage,conviction
+frozenset({'17:00:00'}),frozenset({'channel_2'}),1.0,0.08333333333333333,0.08333333333333333,0.08333333333333333,1.0,0.0,1.0
+frozenset({'17:00:00'}),frozenset({'channel_5'}),1.0,0.027777777777777776,0.027777777777777776,0.027777777777777776,1.0,0.0,1.0
