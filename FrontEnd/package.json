@@ -45,6 +45,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.12.1",
     "@material-ui/core": "^4.9.11",
+    "canvas-confetti": "^1.5.1",
     "chart.js": "2.9.3",
     "classnames": "2.2.6",
     "csv-parser": "^2.3.2",
@@ -53,6 +54,7 @@
     "nouislider": "14.1.1",
     "papaparse": "^5.2.0",
     "react": "16.12.0",
+    "react-addons": "^0.9.1-deprecated",
     "react-chartjs-2": "2.9.0",
     "react-copy-to-clipboard": "5.0.2",
     "react-datetime": "2.16.3",
@@ -61,8 +63,9 @@
     "react-router-dom": "5.1.2",
     "react-scripts": "3.4.1",
     "react-select": "^3.1.0",
+    "react-slides": "^1.0.1",
+    "react-speech-recognition": "^2.0.4",
     "react-switch": "^5.0.1",
-    "react-timekeeper": "^2.1.1",
     "reactstrap": "8.4.1"
   },
   "devDependencies": {

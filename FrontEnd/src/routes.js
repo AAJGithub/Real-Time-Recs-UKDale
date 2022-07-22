@@ -17,11 +17,13 @@
 */
 import Index from "views/Index.js";
 import Profile from "views/examples/Appliances.js";
+import AboutUs from "views/examples/AboutUs.js";
+import Presentation from "views/examples/Presentation.js";
 // import Maps from "views/examples/Maps.js";
 // import Register from "views/examples/Register.js";
 // import Login from "views/examples/Login.js";
 // import Tables from "views/examples/Tables.js";
-// import Icons from "views/examples/Icons.js";
+import Icons from "views/examples/Icons.js";
 
 var routes = [
   {
@@ -36,7 +38,7 @@ var routes = [
   //   name: "Icons",
   //   icon: "ni ni-planet text-blue",
   //   component: Icons,
-  //   layout: "/admin"
+  //   layout: "/admin",
   // },
   // {
   //   path: "/maps",
@@ -52,13 +54,21 @@ var routes = [
     component: Profile,
     layout: "/admin",
   },
-  // {
-  //   path: "/tables",
-  //   name: "Tables",
-  //   icon: "ni ni-bullet-list-67 text-red",
-  //   component: Tables,
-  //   layout: "/admin"
-  // },
+  {
+    path: "/presentation",
+    name: "Presentation",
+    icon: "far fa-file-powerpoint text-info",
+    component: Presentation,
+    layout: "/admin",
+  },
+  {
+    path: "/aboutus",
+    name: "About Us",
+    icon: "ni ni-circle-08 text-green",
+    component: AboutUs,
+    layout: "/admin",
+  },
+
   // {
   //   path: "/login",
   //   name: "Login",

@@ -18,7 +18,7 @@
 import React from "react";
 
 // reactstrap components
-import { Button, Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, Card, CardBody, CardTitle } from "reactstrap";
 
 class ApplianceHeader extends React.Component {
   render() {
@@ -27,7 +27,7 @@ class ApplianceHeader extends React.Component {
         <div
           className="header pb-8 pt-5 pt-lg-8 d-flex align-items-center"
           style={{
-            minHeight: "600px",
+            minHeight: "200px",
             backgroundImage:
               "url(" + require("assets/img/theme/background.jpg") + ")",
             backgroundSize: "cover",
@@ -37,18 +37,39 @@ class ApplianceHeader extends React.Component {
           {/* Mask */}
           <span className="mask bg-gradient-default opacity-4" />
           {/* Header container */}
-          <Container className="d-flex align-items-center" fluid>
+          <Container fluid>
             <Row>
-              <Col lg="7" md="1">
+              <Col>
                 <h1 className="display-2 text-white">
                   Appliance Recommendations
                 </h1>
-                <p className="text-white mt-0 mb-5">
-                  Change the status of the appliances to get the
-                  recommendations.
-                </p>
               </Col>
             </Row>
+            <Row>
+              <Col>
+                <p className="text-white mt-0 mb-5">
+                  Change the status of appliances to get the recommendations.
+                </p>
+              </Col>
+              <Col lg="2">
+              <Card className="card-stats mb-4 mb-lg-0">
+                <CardBody>
+                  <Row>
+                    <Col className="col-auto">
+                      <div className="icon">
+                        <i className="far fa-clock" />
+                      </div>
+                    </Col>
+                    {/* <div className="col"> */}
+                      <CardTitle className="text-uppercase text-muted mb-0">
+                        <h1>{this.props.time}</h1>
+                      </CardTitle>
+                    {/* </div> */}
+                  </Row>
+                </CardBody>
+              </Card>
+              </Col>
+              </Row>
           </Container>
         </div>
       </>

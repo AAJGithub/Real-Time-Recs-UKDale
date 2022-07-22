@@ -41,7 +41,7 @@ class Header extends React.Component {
                             Appliances
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
-                            18
+                            27
                           </span>
                         </div>
                         <Col className="col-auto">
@@ -87,7 +87,7 @@ class Header extends React.Component {
                             Energy Usage
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
-                            3077.89
+                            6292.20
                           </span>
                         </div>
                         <Col className="col-auto">

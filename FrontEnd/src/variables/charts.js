@@ -16,15 +16,6 @@
 
 */
 const Chart = require("chart.js");
-var csvFilePath = require("../data/Final_CO.csv")
-var Papa = require("papaparse/papaparse.min.js");
-Papa.parse(csvFilePath, {
-  header: true,
-  download: true,
-  skipEmptyLines: true,
-  complete: this.final_save_from_csv,
-});
-
 //
 // Chart extension for making the bars rounded
 // Code from: https://codepen.io/jedtrow/full/ygRYgo
@@ -201,10 +192,10 @@ function chartOptions() {
           padding: 0
         },
         legend: {
-          display: false,
-          position: "bottom",
+          display: true,
+          position: "top",
           labels: {
-            usePointStyle: true,
+            usePointStyle: false,
             padding: 16
           }
         },
@@ -231,8 +222,8 @@ function chartOptions() {
         },
         tooltips: {
           enabled: true,
-          mode: "index",
-          intersect: false
+          intersect: false,
+          displayColors: false,
         }
       },
       doughnut: {
