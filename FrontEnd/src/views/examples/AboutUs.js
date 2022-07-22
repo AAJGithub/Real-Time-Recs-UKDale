@@ -19,29 +19,14 @@ import React from "react";
 
 // reactstrap components
 import {
-  Badge,
   Card,
   Col,
   CardHeader,
-  CardFooter,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
-  DropdownToggle,
-  Media,
-  Pagination,
-  PaginationItem,
-  PaginationLink,
-  Progress,
-  Table,
   Container,
   Row,
   UncontrolledTooltip,
   CardBody,
-  CardImg,
   CardTitle,
-  CardText,
-  Button,
 } from "reactstrap";
 // core components
 import AboutUsHeader from "components/Headers/AboutUsHeader.js";
@@ -119,6 +104,7 @@ class AboutUs extends React.Component {
                               }
                               id="sjsu"
                               target="_blank"
+                              rel="noopener noreferrer"
                             >
                               <img
                                 alt="..."
@@ -134,6 +120,7 @@ class AboutUs extends React.Component {
                               href={"https://www.linkedin.com/in/meirinaki/"}
                               id="linkedin"
                               target="_blank"
+                              rel="noopener noreferrer"
                             >
                               <img
                                 alt="..."
@@ -223,6 +210,7 @@ class AboutUs extends React.Component {
                                   }
                                   id="linkedin"
                                   target="_blank"
+                                  rel="noopener noreferrer"
                                 >
                                   <img
                                     alt="..."
@@ -241,6 +229,7 @@ class AboutUs extends React.Component {
                                   href={"https://github.com/ajthakare"}
                                   id="github"
                                   target="_blank"
+                                  rel="noopener noreferrer"
                                 >
                                   <img
                                     alt="..."
@@ -321,6 +310,7 @@ class AboutUs extends React.Component {
                                   }
                                   id="linkedin"
                                   target="_blank"
+                                  rel="noopener noreferrer"
                                 >
                                   <img
                                     alt="..."
@@ -339,6 +329,7 @@ class AboutUs extends React.Component {
                                   href={"https://github.com/Akshay-Jaiswal"}
                                   id="github"
                                   target="_blank"
+                                  rel="noopener noreferrer"
                                 >
                                   <img
                                     alt="..."
@@ -421,6 +412,7 @@ class AboutUs extends React.Component {
                                   }
                                   id="linkedin"
                                   target="_blank"
+                                  rel="noopener noreferrer"
                                 >
                                   <img
                                     alt="..."
@@ -439,6 +431,7 @@ class AboutUs extends React.Component {
                                   href={"https://github.com/AkshayPagar"}
                                   id="github"
                                   target="_blank"
+                                  rel="noopener noreferrer"
                                 >
                                   <img
                                     alt="..."
@@ -519,6 +512,7 @@ class AboutUs extends React.Component {
                                   }
                                   id="linkedin"
                                   target="_blank"
+                                  rel="noopener noreferrer"
                                 >
                                   <img
                                     alt="..."
@@ -537,6 +531,7 @@ class AboutUs extends React.Component {
                                   href={"https://github.com/JanhaviDahihande"}
                                   id="github"
                                   target="_blank"
+                                  rel="noopener noreferrer"
                                 >
                                   <img
                                     alt="..."

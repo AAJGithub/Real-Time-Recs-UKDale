@@ -19,29 +19,12 @@ import React from "react";
 
 // reactstrap components
 import {
-  Badge,
   Card,
   Col,
   CardHeader,
-  CardFooter,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
-  DropdownToggle,
-  Media,
-  Pagination,
-  PaginationItem,
-  PaginationLink,
-  Progress,
-  Table,
   Container,
   Row,
-  UncontrolledTooltip,
   CardBody,
-  CardImg,
-  CardTitle,
-  CardText,
-  Button,
 } from "reactstrap";
 // import {Slides} from "react-slides";
 // core components
@@ -69,14 +52,15 @@ class Presentation extends React.Component {
                         width="1000px"
                         height="600px"
                         frameborder="0"
+                        title="Presentation"
                         style={styles.iframe}
                       >
                         This is an embedded{" "}
-                        <a target="_blank" href="https://office.com">
+                        <a target="_blank" rel="noopener noreferrer" href="https://office.com">
                           Microsoft Office
                         </a>{" "}
                         presentation, powered by{" "}
-                        <a target="_blank" href="https://office.com/webapps">
+                        <a target="_blank" rel="noopener noreferrer" href="https://office.com/webapps">
                           Office
                         </a>
                         .
