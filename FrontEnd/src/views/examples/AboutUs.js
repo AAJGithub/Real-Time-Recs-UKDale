@@ -182,16 +182,6 @@ class AboutUs extends React.Component {
                               Software Engineering
                             </p>
                             <p className="ml-3 text-muted mb-0">
-                              <span className="text-primary mr-2">
-                                <i className="ni ni-email-83" />
-                              </span>
-                              <a href="mailto:ajinkya.thakare@sjsu.edu">
-                                <span className="text-muted">
-                                  ajinkya.thakare@sjsu.edu
-                                </span>
-                              </a>
-                            </p>
-                            <p className="ml-3 text-muted mb-0">
                               <span className="text-success mr-2">
                                 <i className="ni ni-email-83" />
                               </span>
@@ -280,16 +270,6 @@ class AboutUs extends React.Component {
                                 <i className="ni ni-building" />
                               </span>
                               Software Engineering
-                            </p>
-                            <p className="ml-3 text-muted mb-0">
-                              <span className="text-primary mr-2">
-                                <i className="ni ni-email-83" />
-                              </span>
-                              <a href="mailto:akshay.jaiswal@sjsu.edu">
-                                <span className="text-muted">
-                                  akshay.jaiswal@sjsu.edu
-                                </span>
-                              </a>
                             </p>
                             <p className="ml-3 text-muted mb-0">
                               <span className="text-success mr-2">
@@ -384,16 +364,6 @@ class AboutUs extends React.Component {
                               Software Engineering
                             </p>
                             <p className="ml-3 text-muted mb-0">
-                              <span className="text-primary mr-2">
-                                <i className="ni ni-email-83" />
-                              </span>
-                              <a href="mailto:akshayanil.pagar@sjsu.edu">
-                                <span className="text-muted">
-                                  akshayanil.pagar@sjsu.edu
-                                </span>
-                              </a>
-                            </p>
-                            <p className="ml-3 text-muted mb-0">
                               <span className="text-success mr-2">
                                 <i className="ni ni-email-83" />
                               </span>
@@ -482,16 +452,6 @@ class AboutUs extends React.Component {
                                 <i className="ni ni-building" />
                               </span>
                               Software Engineering
-                            </p>
-                            <p className="ml-3 text-muted mb-0">
-                              <span className="text-primary mr-2">
-                                <i className="ni ni-email-83" />
-                              </span>
-                              <a href="mailto:janhavi.dahihande@sjsu.com">
-                                <span className="text-muted">
-                                  janhavi.dahihande@sjsu.edu
-                                </span>
-                              </a>
                             </p>
                             <p className="ml-3 text-muted mb-0">
                               <span className="text-success mr-2">
