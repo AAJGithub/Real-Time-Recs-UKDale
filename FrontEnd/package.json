@@ -66,6 +66,7 @@
     "react-slides": "^1.0.1",
     "react-speech-recognition": "^2.0.4",
     "react-switch": "^5.0.1",
+    "react-timekeeper": "^1.1.0",
     "reactstrap": "8.4.1"
   },
   "devDependencies": {

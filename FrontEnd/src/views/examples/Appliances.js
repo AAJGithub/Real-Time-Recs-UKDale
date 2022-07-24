@@ -36,7 +36,7 @@ import {
 } from "reactstrap";
 // core components
 import ApplianceHeader from "components/Headers/ApplianceHeader.js";
-// import Timekeeper from "react-timekeeper";
+import Timekeeper from "react-timekeeper";
 // import Switch from "@material-ui/core/Switch";
 // import FormGroup from '@material-ui/core/FormGroup';
 // import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -1111,8 +1111,7 @@ class Appliances extends React.Component {
                               >
                                 System Time
                               </Button>
-                              {/* TODO: Add custom time features */}
-                              {/* <Button
+                              <Button
                                 className="float-right"
                                 color="default"
                                 href="#pablo"
@@ -1120,7 +1119,7 @@ class Appliances extends React.Component {
                                 size="lr"
                               >
                                 Custom Time
-                              </Button> */}
+                              </Button>
                             </div>
                             <hr />
                             {this.state.systemTime && (
@@ -1130,8 +1129,7 @@ class Appliances extends React.Component {
                                 </div>
                               </>
                             )}
-                            {/* TODO: Add custom time features */}
-                            {/* {this.state.customeTime && (
+                            {this.state.customeTime && (
                               <>
                                 <div className="text-center">
                                   <h1>{this.state.customTimeClick}</h1>
@@ -1144,7 +1142,7 @@ class Appliances extends React.Component {
                                   />
                                 </div>
                               </>
-                            )} */}
+                            )}
                           </div>
                           <div className="modal-footer">
                             <Button
