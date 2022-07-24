@@ -60,11 +60,9 @@ class ApplianceHeader extends React.Component {
                         <i className="far fa-clock" />
                       </div>
                     </Col>
-                    {/* <div className="col"> */}
-                      <CardTitle className="text-uppercase text-muted mb-0">
-                        <h1>{this.props.time}</h1>
-                      </CardTitle>
-                    {/* </div> */}
+                    <CardTitle className="text-uppercase text-muted mb-0">
+                      <h1>{this.props.time}</h1>
+                    </CardTitle>
                   </Row>
                 </CardBody>
               </Card>

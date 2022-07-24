@@ -19,10 +19,6 @@ import Index from "views/Index.js";
 import Profile from "views/examples/Appliances.js";
 import AboutUs from "views/examples/AboutUs.js";
 import Presentation from "views/examples/Presentation.js";
-// import Maps from "views/examples/Maps.js";
-// import Register from "views/examples/Register.js";
-// import Login from "views/examples/Login.js";
-// import Tables from "views/examples/Tables.js";
 
 var routes = [
   {
@@ -32,20 +28,6 @@ var routes = [
     component: Index,
     layout: "/admin",
   },
-  // {
-  //   path: "/icons",
-  //   name: "Icons",
-  //   icon: "ni ni-planet text-blue",
-  //   component: Icons,
-  //   layout: "/admin",
-  // },
-  // {
-  //   path: "/maps",
-  //   name: "Maps",
-  //   icon: "ni ni-pin-3 text-orange",
-  //   component: Maps,
-  //   layout: "/admin"
-  // },
   {
     path: "/recommendations",
     name: "Appliance Recommendations",
@@ -67,20 +49,5 @@ var routes = [
     component: AboutUs,
     layout: "/admin",
   },
-
-  // {
-  //   path: "/login",
-  //   name: "Login",
-  //   icon: "ni ni-key-25 text-info",
-  //   component: Login,
-  //   layout: "/auth"
-  // },
-  // {
-  //   path: "/register",
-  //   name: "Register",
-  //   icon: "ni ni-circle-08 text-pink",
-  //   component: Register,
-  //   layout: "/auth"
-  // }
 ];
 export default routes;

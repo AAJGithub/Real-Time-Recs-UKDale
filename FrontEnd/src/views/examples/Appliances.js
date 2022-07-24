@@ -17,7 +17,6 @@
 */
 import React from "react";
 
-// reactstrap components
 import {
   Button,
   Card,
@@ -37,9 +36,6 @@ import {
 // core components
 import ApplianceHeader from "components/Headers/ApplianceHeader.js";
 import Timekeeper from "react-timekeeper";
-// import Switch from "@material-ui/core/Switch";
-// import FormGroup from '@material-ui/core/FormGroup';
-// import FormControlLabel from '@material-ui/core/FormControlLabel';
 import PropTypes from "prop-types";
 import SpeechRecognition from "react-speech-recognition";
 import "./Switch.css";
@@ -107,7 +103,6 @@ class Appliances extends React.Component {
     if (house_key !== null) {
       this.state.house_key = house_key;
     }
-    // console.log("house_key:", house_key);
     this.state.isVoiceMode = isVoiceMode;
     this.handleHouseKeyChange();
 
@@ -148,8 +143,6 @@ class Appliances extends React.Component {
       local_rooms[room] = devices;
     }
     this.setState({ rooms_data: local_rooms });
-    // console.log("Saving room data in state:");
-    // console.log(this.state.rooms_data);
   };
 
   load_recs_from_csv = () => {
@@ -167,7 +160,6 @@ class Appliances extends React.Component {
 
   save_recs_from_csv = (result) => {
     const data = result.data;
-    // console.log(data);
 
     const local_recs = {};
 
@@ -178,9 +170,6 @@ class Appliances extends React.Component {
     }
 
     this.setState({ rec_model: local_recs });
-
-    // console.log("Saving rec model in state:");
-    // console.log(this.state.rec_model);
   };
 
   parseData = (url, callBack, timeKey) => {
@@ -196,7 +185,6 @@ class Appliances extends React.Component {
   };
 
   load_appl_energy_from_csv = (timeKey) => {
-    // console.log("TimeKey: " + timeKey);
     var csvFilePath = require("../../data/" +
       this.state.house_key +
       "/Time_CSV/Time_" +
@@ -207,7 +195,6 @@ class Appliances extends React.Component {
 
   save_appl_energy_from_csv = (timeKey, result) => {
     const data = result.data;
-    // console.log(data);
 
     const local_energy = {};
 
@@ -217,9 +204,6 @@ class Appliances extends React.Component {
     }
 
     this.setState({ appl_energy: local_energy });
-
-    // console.log("Saving local appliance energies in state:");
-    // console.log(this.state.appl_energy);
 
     this.fetch_recommendations(timeKey);
   };
@@ -310,9 +294,6 @@ class Appliances extends React.Component {
           myConfetti({
             particleCount: 100,
             spread: 100,
-            // shapes: ["circle", "square"],
-            // colors: ['#ffff00']
-            // origin: { x: 0.75,y:0.75 }
           });
         }
       }, 100);
@@ -323,10 +304,8 @@ class Appliances extends React.Component {
     let hide = this.state.hidden_appliances;
     let index = hide.indexOf(event.target.id);
     if (index > -1) {
-      // console.log(event.target.id + " visible");
       hide.splice(index, 1);
     } else {
-      // console.log(event.target.id + " hidden");
       hide.push(event.target.id);
     }
     this.setState({
@@ -335,15 +314,9 @@ class Appliances extends React.Component {
   };
 
   fetch_recommendations = async (timeKey) => {
-    // console.log("From fetch_recommendations");
-
     //get appropriate time key to look into saved recommendation model
 
     let appls = this.state.rec_model[timeKey];
-
-    // console.log("Recommendations: " + appls);
-    // console.log("On appls: ", this.state.on_appliances);
-    // console.log("Hidden appls: ", this.state.hidden_appliances);
 
     //logic to check which devices should be on and off
     let to_off = [];
@@ -355,7 +328,6 @@ class Appliances extends React.Component {
         to_off.push(app);
       }
     }
-    // console.log("to_off: ", to_off);
     let visibleDevices_toOff = to_off.filter(
       (x) => !this.state.hidden_appliances.includes(x)
     );
@@ -371,7 +343,6 @@ class Appliances extends React.Component {
         }
       }
     }
-    // console.log("to_on: ", to_on);
     let visibleDevices_toOn = to_on.filter(
       (x) => !this.state.hidden_appliances.includes(x)
     );
@@ -379,11 +350,8 @@ class Appliances extends React.Component {
       rec_off_on_arr: visibleDevices_toOn,
     });
 
-    // console.log("Should be ON, but OFF: " + this.state.rec_on_off_arr);
     console.log("Should be ON, but OFF: " + visibleDevices_toOn);
-    // console.log("Should be OFF, but ON: " + this.state.rec_off_on_arr);
     console.log("Should be OFF, but ON: " + visibleDevices_toOff);
-    // console.log(to_on.toString());
 
     // code for energy save card
     let reg_energy = 0;
@@ -413,13 +381,6 @@ class Appliances extends React.Component {
       saved_energy: to_save_energy.toFixed(2),
       current_energy: curr_energy.toFixed(2),
     });
-
-    // console.log("Regular energy usage: " + reg_energy.toFixed(2));
-    // console.log("To On energy usage: " + to_on_energy.toFixed(2));
-    // console.log("To Off energy usage: " + to_off_energy.toFixed(2));
-    // console.log("To Save energy usage: " + to_save_energy.toFixed(2));
-    // console.log("State regular energy usage: " + this.state.regular_energy);
-    // console.log("State Saved energy usage: " + this.state.saved_energy);
 
     //code for voice mode
     if (this.state.isVoiceMode) {
@@ -547,7 +508,6 @@ class Appliances extends React.Component {
       "hidden_appliances",
       JSON.stringify(this.state.hidden_appliances)
     );
-    // console.log("Get recommendations");
     var timeKey = parseInt(this.state.time);
     if (timeKey > 233000) timeKey = parseInt("000000");
     else {
@@ -555,7 +515,6 @@ class Appliances extends React.Component {
       timeKey -= mins;
 
       let to_add = 3000;
-      // if (mins > 3000) to_add = 3000;
       if (mins < 3000) to_add = 0;
 
       timeKey += to_add;
@@ -665,7 +624,6 @@ class Appliances extends React.Component {
                     })}
                   </Row>
                   <br />
-                  {/* <hr/> */}
                 </>
               ))}
             </div>
@@ -772,11 +730,6 @@ class Appliances extends React.Component {
                             src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
                           ></audio>
                         </Row>
-                        {/* <div>
-                        <button onClick={this.props.startListening}>Start</button>
-                        <p id="output">{this.props.transcript}</p>
-                        <button onClick={() => {getTranscipt(); }}>Stop</button>
-                      </div> */}
                       </Col>
                     )}
                   </Row>
@@ -806,7 +759,6 @@ class Appliances extends React.Component {
                                       </div>
                                       <Col className="col-auto">
                                         <div className="avatar rounded-circle mr-3">
-                                          {/* <i className="fas fa-chart-bar" /> */}
                                           <img
                                             alt="..."
                                             src={require("assets/img/theme/" +
@@ -975,42 +927,14 @@ class Appliances extends React.Component {
                                     style={{ cursor: "pointer" }}
                                   >
                                     <div className="icon icon-shape bg-yellow text-white rounded-circle shadow">
-                                      {/* <i className="fas fa-chevron-circle-right" /> */}
                                       <i className="far fa-lightbulb" />
                                     </div>
                                   </Col>
-                                  {/* <UncontrolledTooltip
-                                    delay={0}
-                                    placement="right"
-                                    target="tooltip159654437"
-                                  >
-                                    Set Time
-                                  </UncontrolledTooltip> */}
                                 </Row>
                               </CardBody>
                             </Card>
                           </div>
                         </Col>
-                        {/* <Col md="4"> */}
-                        {/* <Button
-                            block
-                            className="mb-3"
-                            color="success"
-                            type="button"
-                            onClick={() => this.toggleModal("notificationModal")}
-                          > */}
-                        {/* <Col className="col-auto" style={{ cursor: "pointer" }}>
-                          <div
-                            className="text-yellow"
-                            onClick={() =>
-                              this.toggleModal("notificationModal")
-                            }
-                          >
-                            <i className="far fa-lightbulb fa-5x" />
-                          </div>
-                        </Col> */}
-                        {/* Notification
-                          </Button> */}
                         <Modal
                           className={
                             "modal-dialog-centered modal-" +
@@ -1079,8 +1003,6 @@ class Appliances extends React.Component {
                             </div>
                           </div>
                         </Modal>
-                        {/* </Col> */}
-                        {/* Modal */}
                         <Modal
                           className="modal-dialog-centered"
                           isOpen={this.state.exampleModal}
@@ -1173,9 +1095,6 @@ class Appliances extends React.Component {
                             }}
                           >
                             <CardBody>
-                              {/* {console.log(
-                                "To Switch On: " + this.state.rec_off_on_arr
-                              )} */}
                               <CardTitle
                                 style={{
                                   fontWeight: "bold",
@@ -1219,9 +1138,6 @@ class Appliances extends React.Component {
                             }}
                           >
                             <CardBody>
-                              {/* {console.log(
-                                "To Switch Off: " + this.state.rec_on_off_arr
-                              )} */}
                               <CardTitle
                                 style={{
                                   fontWeight: "bold",
@@ -1235,7 +1151,6 @@ class Appliances extends React.Component {
                                     <Col xs="4" style={styles.colStyle}>
                                       <Card className="card-stats mb-4 mb-lg-0 justify-content-center">
                                         <CardBody>
-                                          {/* <Col xs="12"> */}
                                           <CardTitle className="text-uppercase text-muted mb-0">
                                             <div className="avatar rounded-circle mr-1">
                                               <img
@@ -1285,12 +1200,10 @@ const styles = {
   },
   selectedButtonStyle: {
     backgroundColor: "#CEFFFF",
-    // width: "13.5rem",
   },
   normalButtonStyle: {
     backgroundColor: "white",
     justifyContent: "center",
-    // width: "13.5rem",
   },
   select: {
     height: 40,

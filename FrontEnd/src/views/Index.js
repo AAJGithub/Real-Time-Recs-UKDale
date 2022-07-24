@@ -62,29 +62,6 @@ class Index extends React.Component {
       f1_score_xgboost: "",
       appliance_name: "Laptop",
       house_list: ["House 2", "House 3", "House 4"],
-      // labels: [
-      //   "2013-05-26",
-      //   "2013-06-02",
-      //   "2013-06-09",
-      //   "2013-06-16",
-      //   "2013-06-23",
-      //   "2013-06-30",
-      //   "2013-07-07",
-      //   "2013-07-14",
-      //   "2013-07-21",
-      //   "2013-07-28",
-      //   "2013-08-04",
-      //   "2013-08-11",
-      //   "2013-08-18",
-      //   "2013-08-25",
-      //   "2013-09-01",
-      //   "2013-09-08",
-      //   "2013-09-15",
-      //   "2013-09-22",
-      //   "2013-09-29",
-      //   "2013-10-06",
-      //   "2013-10-13",
-      // ],
       house_key: "House 2",
       appliance_list: [],
       aggregate_power: [], //Values for first grpah
@@ -178,10 +155,8 @@ class Index extends React.Component {
     }
     this.setState({
       appliance_list: appliances,
-      // appliance_name: appliances[0],
       chartDataModel: data,
     });
-    // localStorage.setItem("appliance_list", appliances);
     this.state.appliance_name = appliances[0];
     console.log("setCSVappliance_name:", this.state.appliance_name);
   };
@@ -244,45 +219,6 @@ class Index extends React.Component {
       }
     }
   }
-    // for (let i = 0; i < model.length; i++) {
-    //   if (model[i]["Appliance"] === applianceSelected) {
-    //     this.setState({
-    //       CO_value: model[i]["CO"].split(","),
-    //       FHMM_value: model[i]["FHMM"].split(","),
-    //       GT_value: model[i]["GT"].split(","),
-    //     });
-    //   }
-    // }
-
-    // console.log("object: ", this.state.house_key);
-    // for (let i = 0; i < co_model.length; i++) {
-    //   if (co_model[i]["Appliance"] === applianceSelected) {
-    //     this.setState({
-    //       accuracy_co: co_model[i]["Accuracy"].slice(0, 6),
-    //       precision_co: co_model[i]["Precision"].slice(0, 6),
-    //       recall_co: co_model[i]["Recall"].slice(0, 6),
-    //       f1_score_co: co_model[i]["F1"].slice(0, 6),
-    //     });
-    //   }
-    // }
-    // for (let i = 0; i < fhmm_model.length; i++) {
-    //   if (fhmm_model[i]["Appliance"] === applianceSelected) {
-    //     this.setState({
-    //       accuracy_fhmm: fhmm_model[i]["Accuracy"].slice(0, 6),
-    //       precision_fhmm: fhmm_model[i]["Precision"].slice(0, 6),
-    //       recall_fhmm: fhmm_model[i]["Recall"].slice(0, 6),
-    //       f1_score_fhmm: fhmm_model[i]["F1"].slice(0, 6),
-    //     });
-    //     break;
-    //   } else {
-    //     this.setState({
-    //       accuracy_fhmm: "-",
-    //       precision_fhmm: "-",
-    //       recall_fhmm: "-",
-    //       f1_score_fhmm: "-",
-    //     });
-    //   }
-    // }
   };
 
   handleApplianceNameChange = () => {

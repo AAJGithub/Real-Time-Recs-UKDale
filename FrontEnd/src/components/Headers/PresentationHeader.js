@@ -41,9 +41,6 @@ class PresentationHeader extends React.Component {
             <Row>
               <Col lg="7" md="10">
                 <h1 className="display-2 text-white">Presentation</h1>
-                {/* <p className="text-white mt-0 mb-5">
-                  Real Time Recommendation System
-                </p> */}
               </Col>
             </Row>
           </Container>

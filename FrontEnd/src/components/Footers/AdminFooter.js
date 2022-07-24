@@ -31,38 +31,6 @@ class Footer extends React.Component {
               Real-Time Recommendations
             </div>
           </Col>
-          {/* <Row className="align-items-center text-xl-right">
-            <Col>
-              <div className="copyright text-muted">
-                Icons by
-                <a
-                  className="font-weight-bold ml-1"
-                  href="https://www.creative-tim.com?ref=adr-auth-footer"
-                  target="_blank"
-                >
-                  Roundicons
-                </a>
-                &nbsp;from
-                <a
-                  className="font-weight-bold ml-1"
-                  href="https://www.flaticon.com/"
-                  target="_blank"
-                >
-                  www.flaticon.com
-                </a>
-              </div>
-            </Col>
-            <div className="copyright text-center text-muted">
-              Template by
-              <a
-                className="font-weight-bold ml-1"
-                href="https://www.creative-tim.com?ref=adr-auth-footer"
-                target="_blank"
-                >
-                Creative Tim
-              </a>
-            </div>
-          </Row> */}
         </Row>
       </footer>
     );
