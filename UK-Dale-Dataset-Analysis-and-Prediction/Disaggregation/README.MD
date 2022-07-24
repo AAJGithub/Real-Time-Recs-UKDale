@@ -1,7 +1,7 @@
 # UK-Dale Dataset Energy Disaggregation  
 We followed following Energy Disaggregation Algorithms:
 * Combinatorial Optimization [notebook](https://github.com/AAJGithub/Real-Time-Recs-UKDale/blob/main/UK-Dale-Dataset-Analysis-and-Prediction/Disaggregation/CO_and_FHMM_Disaggregation_for_UKDALE.ipynb)
-* Factorial Hidden Markov Model [notebook](https://github.com/AAJGithub/Real-Time-Recs-UKDale/blob/UK-Dale-Dataset-Analysis-and-Prediction/blob/master/Disaggregation/CO_and_FHMM_Disaggregation_for_UKDALE.ipynb)
+* Factorial Hidden Markov Model [notebook](https://github.com/AAJGithub/Real-Time-Recs-UKDale/blob/main/UK-Dale-Dataset-Analysis-and-Prediction/Disaggregation/CO_and_FHMM_Disaggregation_for_UKDALE.ipynb)
 * Recuurent Neural Network Disaggregation [notebook](https://github.com/AAJGithub/Real-Time-Recs-UKDale/blob/main/UK-Dale-Dataset-Analysis-and-Prediction/Disaggregation/RNN_Disaggregation_for_UKDALE.ipynb)
 * Personal Implementation of energy disaggregation using Classification [notebook](https://github.com/AAJGithub/Real-Time-Recs-UKDale/blob/main/UK-Dale-Dataset-Analysis-and-Prediction/Disaggregation/Energy-Disaggregation-Personal-algorithm.ipynb)
 
