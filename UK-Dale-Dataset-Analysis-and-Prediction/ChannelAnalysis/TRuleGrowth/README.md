@@ -1,5 +1,10 @@
 # Generate recommendations using TRuleGrowth (Sequential Rule Mining) Algorithm
 
+This folder contains required files to generate recommendations using the TRuleGrowth algorithm. 
+The file `Recommendations_Sequential_Rule_Mining.ipnyb` contains the relevant execution for obtaining the recommendations. 
+
+Before executing the TRuleGrowth algorithm, we require the data to be in form of sequences as an acceptable input to the TRuleGrowth algorithm. The execution of the algorithm is contained in the `script_trule_growth.py` file which then provides results that works as an input to the `Recommendations_Sequential_Rule_Mining.ipynb` file to generate relevant recommendations in `recommendations.csv`. We have also simplified the data to show the appliance names instead of the channels in the `recommendations_final.csv` file.
+
 ## Prerequisites
   Execute `/Utils/Resampling_and_Generating_Appliance_on_off_Data.ipynb` to generate Channel_On_Off data 
 

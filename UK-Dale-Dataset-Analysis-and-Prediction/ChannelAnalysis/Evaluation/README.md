@@ -1,5 +1,8 @@
 # Evaluating recommendations generated using Apriori Algorithm
 
+This folder contains required files for evaluation of recommendations acquired using the Apriori algorithm.
+The file `Evaluation_metrics_for_recommendations.ipynb` should be executed after getting the prerequisites in order. The output will be recommendations in the form of a csv of each House under their respective folders.
+
 ## Prerequisites
   - Install mlxtend library 
   - Execute `/Utils/Resampling_and_Generating_Appliance_on_off_Data.ipynb` to generate Channel_On_Off data 

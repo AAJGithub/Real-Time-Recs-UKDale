@@ -1,6 +1,9 @@
 
 # Generate recommendations using Apriori (Association Pattern Mining) Algorithm
 
+This folder contains required files to generate recommendations using the Apriori algorithm. 
+The file `Generate_Recommendations_Apriori.ipnyb` contains the relevant execution and generates the `Recommendations.csv` for every House.
+
 ## Prerequisites
   - Install mlxtend library 
   - Execute `/Utils/Resampling_and_Generating_Appliance_on_off_Data.ipynb` to generate Channel_On_Off data 
